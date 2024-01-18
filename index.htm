@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-Home-Page</title>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, aliquam deserunt fugit tempora error nobis assumenda. Dignissimos, unde eveniet autem animi soluta non saepe cum ullam repudiandae ex nobis labore nemo! Aperiam quod totam recusandae porro voluptatem minus autem ex doloribus iste natus, eum at in quae quas modi praesentium nulla asperiores adipisci itaque deleniti voluptatum. Libero laudantium dolorem tempora, veritatis harum labore aliquam sed facere expedita consequatur eos sit explicabo! Hic mollitia reprehenderit animi ratione expedita! Numquam quae possimus molestias porro, minima optio beatae neque quas rerum magni molestiae aperiam, dolorem esse similique repellendus adipisci libero unde perspiciatis. Beatae?</p>    
+    
+    <article>Hello</article>
+</body>
+
+<script>
+
+    const article = document.querySelector('article')
+    
+    const now = new Date().toLocaleTimeString()
+
+    if(now.includes('PM')) {
+        article.textContent = "Good evening"
+
+    } else {
+        article.textContent = 'Good Morning'
+    }
+
+    
+
+    
+
+</script>
+
+</html>
