@@ -7,27 +7,49 @@
 
 <body>
     <h1>Hello</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, aliquam deserunt fugit tempora error nobis assumenda. Dignissimos, unde eveniet autem animi soluta non saepe cum ullam repudiandae ex nobis labore nemo! Aperiam quod totam recusandae porro voluptatem minus autem ex doloribus iste natus, eum at in quae quas modi praesentium nulla asperiores adipisci itaque deleniti voluptatum. Libero laudantium dolorem tempora, veritatis harum labore aliquam sed facere expedita consequatur eos sit explicabo! Hic mollitia reprehenderit animi ratione expedita! Numquam quae possimus molestias porro, minima optio beatae neque quas rerum magni molestiae aperiam, dolorem esse similique repellendus adipisci libero unde perspiciatis. Beatae?</p>    
-    
+    <p>My name is Dawson</p>
     <article>Hello</article>
 </body>
 
 <script>
 
-    const article = document.querySelector('article')
+    // let and const -- let means variable will / can be changes const is a constant(cannot be change)
+    const name = 'dawson'
     
-    const now = new Date().toLocaleTimeString()
+    let age = 19
 
-    if(now.includes('PM')) {
-        article.textContent = "Good evening"
+    // string interpolation below
+    console.log(`${name} is ${age} years old`)
 
-    } else {
-        article.textContent = 'Good Morning'
+    //have to define const -- do not need to define let
+
+        // enum
+    const person = {
+        firstname : 'a',
+        lastname : 'b',
     }
 
+    // array
+    const fruit = ['apples','bannnas','pears']
     
+    //function is  a data-type in JS
+    const add = (num1,num2) => {
+        return num1+num2;
+    }
 
-    
+    let x = 5
+    let y = 10
+
+    // double equals least desireable -- triple equals checks type and value to make sure value and data type are the same
+    console.log(x === y)
+
+    // ternary operator (3-parts), explanation -- if the first part is TRUE then positive / first part if being used if it is false the second one is being used 
+    let z = 5
+    let w = z > 0 ? "positive" : "negative"
+    console.log(w) // "positive"
+
+
+
 
 </script>
 
